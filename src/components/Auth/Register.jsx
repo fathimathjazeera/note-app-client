@@ -20,7 +20,7 @@ function Register() {
   const nav= useNavigate()
   const registerUser = async (event) => {
     event.preventDefault();
-  const response =  await axios.post("http://localhost:7000/api/auth/register", {
+  const response =  await axios.post("https://note-taking-app-s8js.onrender.com/api/auth/register", {
       username,
       email,
       password,
