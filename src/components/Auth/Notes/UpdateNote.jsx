@@ -13,7 +13,7 @@ const nav= useNavigate()
     try {
       const token = localStorage.getItem("authToken");
    const response =   await axios.put(
-        `http://localhost:7000/api/note/updatenote/${id}`,
+        `https://note-taking-app-s8js.onrender.com/api/note/updatenote/${id}`,
         { title, description },
         {
           headers: {
