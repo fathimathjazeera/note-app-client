@@ -13,7 +13,7 @@ function App() {
     <>
  
    <Routes >
-   <Route  path="/" Component={CreateNote}/>
+   <Route  path="/" Component={Register}/>
 <Route  path="/login" Component={Login}/>
 <Route  path="/register" Component={Register}/>
 <Route  path="/addnote" Component={CreateNote}/>
