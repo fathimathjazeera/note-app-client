@@ -22,7 +22,7 @@ const login =async(event)=>{
         console.log(token)
         localStorage.setItem('authToken', token);
 alert("successfully logged In")
-nav('/viewnote')
+nav('/viewnotes')
     }else{
         alert('login failed')
     }
