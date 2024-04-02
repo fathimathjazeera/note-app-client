@@ -12,7 +12,7 @@ function Login() {
 const login =async(event)=>{
     event.preventDefault()
 
- const response =   await axios.post('http://localhost:7000/api/auth/login',{
+ const response =   await axios.post('https://note-taking-app-s8js.onrender.com/api/auth/login',{
         email,
         password
     })
