@@ -22,7 +22,7 @@ const nav = useNavigate()
 const addNote = async(event)=>{
     event.preventDefault()
     const token = localStorage.getItem("authToken");
-  const response =  await axios.post('http://localhost:7000/api/note/createnote',{
+  const response =  await axios.post('https://note-taking-app-s8js.onrender.com/api/note/createnote',{
         title,
         description
     },{
