@@ -18,7 +18,7 @@ const [notes,setNotes] = useState([])
 const [color, setColor] = useState('#ffffff');
 const nav= useNavigate()
     const getNotes = async()=>{
-      const response =  await axios.get('http://localhost:7000/api/note/getnotes')
+      const response =  await axios.get('https://note-taking-app-s8js.onrender.com/api/note/getnotes')
         const {status,message, data}= response.data
         console.log(data,"data")
       if(status == "success"){
@@ -34,7 +34,7 @@ setNotes(data)
     const deleteNote = async(id)=>{
         try{
             const token = localStorage.getItem("authToken");
-            const response =    await axios.delete(`http://localhost:7000/api/note/deletenote/${id}`,{
+            const response =    await axios.delete(`https://note-taking-app-s8js.onrender.com/api/note/deletenote/${id}`,{
                     headers:{
                         Authorization :`Bearer ${token}`
                     }
